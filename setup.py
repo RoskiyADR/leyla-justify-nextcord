@@ -9,7 +9,7 @@ README = (HERE / "README.md").read_text(encoding="utf8")
 setup(
 	name="JustifyDiscord",
 	version="1.0",
-	author="MagMigo / Reidy and community",
+	author="MagMigo / Roskiy and community",
 	description="A debug discord util",
 	long_description=README,
 	long_description_content_type="text/markdown",
