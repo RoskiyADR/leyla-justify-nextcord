@@ -37,7 +37,7 @@ class JustifyCog(commands.Cog):
             result = str(await self.justify.eval_code(ctx, code))
 
         except Exception as exception:
-            result = f"# An error occurred while executing the code :: \n```py\n{exception.__class__}: {exception}```" 
+            result = f"# Произошла ошибка при выполнении кода: \n```py\n{exception.__class__}: {exception}```" 
         
         finally:
             await self.justify.python_handler_result(ctx, result)
@@ -48,7 +48,7 @@ class JustifyCog(commands.Cog):
         command = self.bot.get_command(cmd)
 
         if command is None:
-            return await ctx.reply('Команда не найдена!')
+            return await ctx.reply('Команда не найдена...')
         
 
         start = time.perf_counter()
