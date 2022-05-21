@@ -24,7 +24,7 @@ class JustifyCog(commands.Cog):
         ]
 
         if isinstance(self.bot, commands.AutoShardedBot):
-            text.append(f'Шардов:\n' + '```py\n' + '\n'.join(list(f"{i[0]} - {i[-1]*1000}" for i in self.bot.latencies)) + '```')
+            text.append(f'Винтики:\n' + '```py\n' + '\n'.join(list(f"{i[0]} - {i[-1]*1000}" for i in self.bot.latencies)) + '```')
 
         await ctx.reply('\n'.join(text))
 
