@@ -7,7 +7,7 @@ HERE = pathlib.Path(__file__).parent
 README = (HERE / "README.md").read_text(encoding="utf8")
 
 setup(
-	name="JustifyDiscord",
+	name="JustifyNextcord",
 	version="1.0",
 	author="MagMigo / Roskiy and community",
 	description="A debug discord util",
