@@ -18,7 +18,7 @@ class JustifyCog(commands.Cog):
     async def justify_main_command(self, ctx: commands.Context):
         text = [
             f'`{self.justify.__version__}, nextcord-{nextcord.__version__}, {sys.version}.`\n',
-            f'Серверов: **{len(self.bot.guilds)}**, users: **{len(self.bot.users)}**',
+            f'Серверов: **{len(self.bot.guilds)}**, пользователей: **{len(self.bot.users)}**',
             f'Кэша: **{len(self.bot.cached_messages)}**',
             f'```py\nВключённые интенты: {", ".join([i[0] for i in self.bot.intents if i[-1]])}```'
         ]
