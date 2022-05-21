@@ -20,7 +20,7 @@ class JustifyCog(commands.Cog):
             f'`{self.justify.__version__}, nextcord-{nextcord.__version__}, {sys.version}.`\n',
             f'Серверов: **{len(self.bot.guilds)}**, пользователей: **{len(self.bot.users)}**',
             f'Кэша: **{len(self.bot.cached_messages)}**',
-            f'```py\nВключённые интенты: {", ".join([i[0] for i in self.bot.intents if i[-1]])}```'
+            f'\n**Включённые интенты:** ```{", ".join([i[0] for i in self.bot.intents if i[-1]])}```'
         ]
 
         if isinstance(self.bot, commands.AutoShardedBot):
@@ -48,7 +48,7 @@ class JustifyCog(commands.Cog):
         command = self.bot.get_command(cmd)
 
         if command is None:
-            return await ctx.reply('Команда не найдена, попробуй другую')
+            return await ctx.reply('Команда не найдена, попробуй другую.  ')
         
 
         start = time.perf_counter()
